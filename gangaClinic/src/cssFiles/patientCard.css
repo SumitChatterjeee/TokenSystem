@@ -1,0 +1,221 @@
+.patient-card-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   PATIENT CARD
+========================= */
+
+.patient-card {
+  width: 100%;
+  max-width: 420px;
+
+  height: 70vh;
+  height: 70dvh;
+
+  padding: 40px 24px;
+  box-sizing: border-box;
+
+  border-radius: 28px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+
+  user-select: none;
+}
+
+/* =========================
+   TOKEN
+========================= */
+
+.patient-card-token {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+  background: #f1f5f9;
+
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* =========================
+   PATIENT INFO
+========================= */
+
+.patient-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+  text-align: center;
+}
+
+.patient-card-label {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.patient-card-info h2 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #0f172a;
+
+  word-break: break-word;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .patient-card-page {
+    padding: 12px;
+  }
+
+  .patient-card {
+    height: 80vh;
+    height: 80dvh;
+
+    padding: 28px 16px;
+    border-radius: 24px;
+  }
+
+  .patient-card-token {
+    width: 80px;
+    height: 80px;
+
+    font-size: 26px;
+    border-radius: 20px;
+  }
+
+  .patient-card-info h2 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   SHORT SCREENS
+========================= */
+
+@media (max-height: 500px) {
+  .patient-card {
+    height: 90vh;
+    height: 90dvh;
+
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .patient-card-token {
+    width: 60px;
+    height: 60px;
+
+    font-size: 22px;
+  }
+
+  .patient-card-info h2 {
+    font-size: 22px;
+  }
+}
+
+/* =========================
+   PATIENT ACTIONS
+========================= */
+
+.patient-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.patient-action-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  background: #ffffff;
+  cursor: pointer;
+
+  /* Removes the blue tap highlight */
+  -webkit-tap-highlight-color: transparent;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.patient-action-btn:hover {
+  transform: scale(1.08);
+}
+
+.patient-action-btn:active {
+  transform: scale(0.94);
+}
+
+.patient-action-btn:focus,
+.patient-action-btn:focus-visible {
+  outline: none;
+}
+
+/* Reject */
+
+.reject-btn {
+  color: #ef4444;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Accept */
+
+.accept-btn {
+  color: #22c55e;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 480px) {
+  .patient-card-actions {
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .patient-action-btn {
+    width: 64px;
+    height: 64px;
+    font-size: 27px;
+  }
+}

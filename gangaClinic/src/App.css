@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("./assets/mobile.svg");
+  }
+}
+
+
+
+.token-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.token-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.token-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.token-btn:hover {
+  transform: translateY(-5px);
+}
+
+.name-input {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1f2937;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+}
+
+.name-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.name-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.token-form {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.token-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.token-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.token-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.token-form button:hover {
+  background: #333;
+}
+
+
+
+
+/* Token Card is for showing token */
+
+.token-card-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokenCard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/* =========================
+   TOKEN CARD PAGE
+========================= */
+
+.token-card-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   TOKEN CARD
+========================= */
+
+.tokenCard {
+  width: 350px;
+  padding: 30px;
+
+  background: #fff;
+
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================
+   PATIENT NAME
+========================= */
+
+.tokenCard-name {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #1f2937;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   TOKEN LABEL
+========================= */
+
+.tokenCard-label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #777;
+
+  margin-bottom: 5px;
+}
+
+
+/* =========================
+   TOKEN NUMBER
+========================= */
+
+.tokenCard-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #111;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .tokenCard {
+    width: 85%;
+    max-width: 350px;
+
+    padding: 28px 20px;
+  }
+
+  .tokenCard-name {
+    font-size: 18px;
+  }
+
+  .tokenCard-number {
+    font-size: 64px;
+  }
+
+}
