@@ -1,10 +1,9 @@
 package com.tokenSystem.repos;
 
-import com.tokenSystem.entities.User;
+import com.tokenSystem.entities.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepo extends JpaRepository<User,Long> {
-
+public interface PatientRepo extends JpaRepository<Patient,Long> {
 }
